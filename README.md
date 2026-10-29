@@ -123,6 +123,11 @@ Within Tethr the utility will largely be used to visualise enemy detection areas
 The utility is fully commented, therefore if you are still unsure about anything even after reading the documentation, you can check out the source code to get a deeper insight.
 
 
+## Requirements
+
+The detection visualisers example script requires the [**EditorAttributes**](https://assetstore.unity.com/packages/tools/gui/editorattributes-269285) package to be installed to function properly, if you do not need the example you can just delete it.
+
+
 ## Editor Use
 
 The **Detection Visualiser** features custom _**Preferences**_, which you can access via the **Unity Editor** by going to **Edit** > **Preferences** > **Detection Visualiser**.
