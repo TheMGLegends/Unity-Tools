@@ -157,3 +157,70 @@ The utility comes with three types of detection visualisation methods, make sure
 ### Examples
 
 The utility also comes with an example _**MonoBehaviour**_ script called **DetectionVisualisationExample** that users can add onto objects via the _**Inspector**_ to aid further in their understanding of the utility.
+
+
+
+***
+
+# Entity Spawner
+
+System that handles spawning of game objects in designated areas provided by the developer. Designated areas are visible and adjustable by the developer via the editor and can feature completely unique configurations. Each designated area can have a max entity cap, as well as a list of entity types to randomly choose from, where each entities chance of getting chosen can be adjusted. Entity configurations will use ScriptableObjects to serve as a centralised way to adjust their values and allow for easier interchangeability with other configurations when needed. This will provide unique gameplay within every level playthrough without the need for more complex features like procedural generation to achieve a similar effect.
+
+<p align="center"><img width="770" height="408" alt="AISpawnerExample" src="https://github.com/user-attachments/assets/63a3f5a3-7927-473d-860f-ee177588fefe" /></p>
+
+
+
+***
+
+# Health Component
+
+Responsible for tracking and modifying health values e.g. (Storing MaxHealth & CurrentHealth, Handle Taking Damage, Death Behaviour, Invincibility Behaviour, Health Related Events).
+
+
+
+***
+
+# Detection Component
+
+Responsible for detecting a chosen target e.g. (Detection Type [Distance, FieldOfView, TriggerBox], Detection Range Debug Visualisation).
+
+
+## Requirements
+
+- The detection component requires the [**EditorAttributes**](https://assetstore.unity.com/packages/tools/gui/editorattributes-269285) package to be installed to function properly.
+- The detection component also relies on the **DetectionVisualiser** to function.
+
+
+
+***
+
+# Movement Component
+
+Responsible for non-physics based movement e.g. (Speed, Movement Type [Manual, Waypoint, Roam], Path Debug Visualisation).
+
+
+## Requirements
+
+- The movement component requires the [**EditorAttributes**](https://assetstore.unity.com/packages/tools/gui/editorattributes-269285) package to be installed to function properly.
+- The movement component also relies on the **PathVisualiser** to function.
+
+
+
+***
+
+# Attack Component
+
+Responsible for decisions regarding attacking e.g. (CanAttack, Attack Range, Attack Cooldown, Attack Range Debug Visualisation, Attack Related Events).
+
+
+## Requirements
+
+The attack component relies on the **DetectionComponent** to function.
+
+
+
+***
+
+# Obstacle Detection Component
+
+Responsible for detecting obstacles such as ledges and boundaries, as well as drawing the obstacle detection gizmos.
