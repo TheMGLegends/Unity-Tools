@@ -73,6 +73,11 @@ Within **Tethr** the utility will largely be used to visualise enemy paths, with
 The utility is fully commented, therefore if you are still unsure about anything even after reading the documentation, you can check out the source code to get a deeper insight.
 
 
+## Requirements
+
+The path visualisers example scripts require the [**EditorAttributes**](https://assetstore.unity.com/packages/tools/gui/editorattributes-269285) package to be installed to function properly, if you do not need the examples you can just delete them.
+
+
 ## Editor Use
 
 The **Path Visualiser** features custom _**Preferences**_, which you can access via the **Unity Editor** by going to **Edit** > **Preferences** > **Path Visualiser**.
